@@ -1,0 +1,17 @@
+//
+//  Release.xcconfig
+//  Melodic
+//
+//  Created by TMA on 26/2/25.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Melodic
+APP_ICON = AppIconRelease
+APP_BUNDLE_ID = com.ntmduc.melodic
+APP_VERSION = 1.0.0
+
+BASE_URL = https:/$()/api.openweathermap.org
+EXAMPLE_KEY = 123455_release

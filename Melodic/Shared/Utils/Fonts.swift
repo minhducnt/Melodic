@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension FontConvertible.Font {
+extension SwiftUI.Font {
     static let notoSansRegular12: SwiftUI.Font = FontFamily.NotoSans.regular.swiftUIFont(size: 12)
     static let notoSansRegular16: SwiftUI.Font = FontFamily.NotoSans.regular.swiftUIFont(size: 16)
     static let notoSansRegular20: SwiftUI.Font = FontFamily.NotoSans.regular.swiftUIFont(size: 20)

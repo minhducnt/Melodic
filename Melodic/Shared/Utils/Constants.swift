@@ -7,4 +7,6 @@
 
 enum Constants {
     static let BASE_URL = "BASE_URL"
+    
+    static let weatherAppId = "99ff5967b746af066812fa3ac3251ebc"
 }

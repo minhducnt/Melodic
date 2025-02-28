@@ -27,7 +27,6 @@
 /* Begin PBXFileReference section */
 		84342F3F2D715D9200094E7C /* Melodic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melodic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A956022D71635200A80D39 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
-		84A958082D71717800A80D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4249FC8CF5D5F6833EC29F4 /* Pods_melodic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_melodic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8821219702B69A51869FFA2 /* Pods-melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melodic.debug.xcconfig"; path = "Target Support Files/Pods-melodic/Pods-melodic.debug.xcconfig"; sourceTree = "<group>"; };
 		E15ABB3B32D89F4074E001FE /* Pods-melodic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melodic.release.xcconfig"; path = "Target Support Files/Pods-melodic/Pods-melodic.release.xcconfig"; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		84A9580A2D7171EB00A80D39 /* Exceptions for "Melodic" folder in "Melodic" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Info.plist,
 				Shared/Configuration/Debug.xcconfig,
 				Shared/Configuration/Release.xcconfig,
 			);
@@ -91,7 +91,6 @@
 		84342F362D715D9200094E7C = {
 			isa = PBXGroup;
 			children = (
-				84A958082D71717800A80D39 /* Info.plist */,
 				84A956022D71635200A80D39 /* swiftgen.yml */,
 				84342F412D715D9200094E7C /* Melodic */,
 				84342F402D715D9200094E7C /* Products */,
@@ -129,6 +128,7 @@
 				84342F3B2D715D9200094E7C /* Sources */,
 				84342F3C2D715D9200094E7C /* Frameworks */,
 				84342F3D2D715D9200094E7C /* Resources */,
+				84AC9C212D71CC9A0009A078 /* Crashlytic */,
 			);
 			buildRules = (
 			);
@@ -234,6 +234,24 @@
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
 		};
+		84AC9C212D71CC9A0009A078 /* Crashlytic */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Crashlytic;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -249,6 +267,8 @@
 /* Begin XCBuildConfiguration section */
 		84342F4C2D715D9300094E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84342F412D715D9200094E7C /* Melodic */;
+			baseConfigurationReferenceRelativePath = Shared/Configuration/Debug.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -311,6 +331,8 @@
 		};
 		84342F4D2D715D9300094E7C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 84342F412D715D9200094E7C /* Melodic */;
+			baseConfigurationReferenceRelativePath = Shared/Configuration/Release.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -378,6 +400,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Melodic/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -395,6 +418,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ntmduc.melodic;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "--APP-BUNDLE-ID-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -420,6 +444,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Melodic/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -437,6 +462,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ntmduc.melodic;
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "--APP-BUNDLE-ID-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";

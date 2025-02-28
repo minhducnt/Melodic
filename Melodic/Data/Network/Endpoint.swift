@@ -15,6 +15,7 @@ struct Endpoint {
     let body: Data?
 
     var url: URL? {
-        return URL(string: "\(ServerConfig.BASE_URL.absoluteString)\(path)")
+        print("\(AppConfig.BASE_URL.absoluteString)")
+        return URL(string: "\(AppConfig.BASE_URL.absoluteString)\(path)")
     }
 }

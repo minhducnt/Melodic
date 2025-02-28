@@ -6,7 +6,7 @@
 //
 import Foundation
 
-enum ServerConfig {
+enum AppConfig {
     // MARK: - Private
 
     private static let configDict: [String: Any] = {

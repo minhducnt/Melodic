@@ -19,8 +19,8 @@ enum AppConfig {
 
     // MARK: - Public
 
-    static let BASE_URL: URL = {
-        guard let urlString = configDict[Constants.BASE_URL] as? String else {
+    static let baseURL: URL = {
+        guard let urlString = Bundle.main.object(forInfoDictionaryKey: "BASEURL") as? String else {
             fatalError("Base url not found")
         }
 
@@ -29,5 +29,19 @@ enum AppConfig {
         }
 
         return url
+    }()
+    
+    static let lastFMAPIKey: String = {
+        guard let apiKey = Bundle.main.object(forInfoDictionaryKey: "LASTFM_API_KEY") as? String else {
+            fatalError("LASTFM_API_KEY not found in Info.plist")
+        }
+        return apiKey
+    }()
+
+    static let lastFMSharedSecret: String = {
+        guard let sharedSecret = Bundle.main.object(forInfoDictionaryKey: "LASTFM_API_SHARED_SECRET") as? String else {
+            fatalError("LASTFM_API_SHARED_SECRET not found in Info.plist")
+        }
+        return sharedSecret
     }()
 }

@@ -33,7 +33,7 @@ class DefaultNetworkManager {
     // MARK: - Sessions
 
     // Custom Configuration Requests via Alamofire
-    private var session: Session = {
+    private var session: Alamofire.Session = {
         var manager = AF
         manager.session.configuration.httpMaximumConnectionsPerHost = 10
         manager.session.configuration.timeoutIntervalForRequest = 60
@@ -45,7 +45,6 @@ class DefaultNetworkManager {
         guard let reachabilityManager = NetworkReachabilityManager.default, reachabilityManager.isReachable else {
             return false
         }
-
         return true
     }
 

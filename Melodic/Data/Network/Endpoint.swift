@@ -11,12 +11,12 @@ import Foundation
 struct Endpoint {
     let path: String
     let method: HTTPMethod
-    let headers: [String: String]
+    let headers: HTTPHeaders
     let queryItems: [URLQueryItem]?
     let body: Data?
 
     var url: URL? {
-        var components = URLComponents(string: "\(AppConfig.BASE_URL.absoluteString)\(path)")
+        var components = URLComponents(string: "\(AppConfig.baseURL.absoluteString)\(path)")
         components?.queryItems = queryItems
         return components?.url
     }

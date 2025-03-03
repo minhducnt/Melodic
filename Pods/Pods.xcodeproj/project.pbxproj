@@ -20,13 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4D70DA84EC92BE3A63C0F8BA9D5172B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		5CE28CF2B50192CFD398F6FA1068D0FE /* Pods-melodic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BD413F4D39F31970093675F4F9B5071 /* Pods-melodic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A0C2FDC8F12A0E29A44C40A4C46F439D /* Pods-melodic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF8D561663FDC07632BD905FB61B382 /* Pods-melodic-dummy.m */; };
+		05D0557B5111EB774333D415DBA9497A /* Pods-Melodic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AAE9B564791A9558C376E8FFF9CB7C5A /* Pods-Melodic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CAD3DB59D6426B6C9E31E0E56C2B00C /* Pods-Melodic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B60FB06B80650472BE7EF67E51F363 /* Pods-Melodic-dummy.m */; };
+		D48586293EB3C354F4785F9E9D4A2A81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DD98EEF5DB2E4DC8E8D2D998E6842647 /* PBXContainerItemProxy */ = {
+		1B115C733923EB1DDE10ED28EF6DDCBC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,27 +36,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		028F725673C917454CBFE3EE1AF4067A /* Pods-melodic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-melodic-acknowledgements.plist"; sourceTree = "<group>"; };
+		054F40D95585A88714A37136E0D77895 /* Pods-Melodic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Melodic.release.xcconfig"; sourceTree = "<group>"; };
+		28B60FB06B80650472BE7EF67E51F363 /* Pods-Melodic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Melodic-dummy.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3EF8D561663FDC07632BD905FB61B382 /* Pods-melodic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-melodic-dummy.m"; sourceTree = "<group>"; };
-		546728A4B6B0DADD755D45B7C1AF3103 /* Pods_melodic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_melodic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BD413F4D39F31970093675F4F9B5071 /* Pods-melodic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-melodic-umbrella.h"; sourceTree = "<group>"; };
-		78D0CF3084391C72E964D26CC2FDE916 /* Pods-melodic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-melodic-Info.plist"; sourceTree = "<group>"; };
+		4EA0527E6B1EB2503542B10A17C52550 /* Pods-Melodic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Melodic-acknowledgements.plist"; sourceTree = "<group>"; };
+		5EB66D5F83528DE87E14322F39088E79 /* Pods-Melodic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Melodic.modulemap"; sourceTree = "<group>"; };
+		91DDD04B13E7B3399D400E348A89EAD1 /* Pods-Melodic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Melodic-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B3339A5B2850EF6388EC01D276DCAD71 /* Pods-melodic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-melodic.modulemap"; sourceTree = "<group>"; };
+		9E1FBEB4C60F9048B641B348FF5E5A7F /* Pods_Melodic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melodic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAE9B564791A9558C376E8FFF9CB7C5A /* Pods-Melodic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Melodic-umbrella.h"; sourceTree = "<group>"; };
 		B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.release.xcconfig; sourceTree = "<group>"; };
-		CDC8708FA249326C35250775DC9849E0 /* Pods-melodic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-melodic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7754F6AACE7F34A6ECCA16D1A000B97 /* Pods-Melodic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Melodic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCA1147B2F6B955F12E0FA484D2E476C /* Pods-Melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Melodic.debug.xcconfig"; sourceTree = "<group>"; };
 		FD691AE7128F940D3B179941FCEC2F54 /* SwiftGen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftGen.debug.xcconfig; sourceTree = "<group>"; };
-		FE41401AC3E76A635FDAEED236DFF14B /* Pods-melodic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-melodic.release.xcconfig"; sourceTree = "<group>"; };
-		FF460B48C8B6A0CA635EC9B8864B83AD /* Pods-melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-melodic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		766BD81B23A4A27242EDDA7FD14C9F59 /* Frameworks */ = {
+		ECF555B6FBA50B432B1D2D2EA312A3CC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D70DA84EC92BE3A63C0F8BA9D5172B7 /* Foundation.framework in Frameworks */,
+				D48586293EB3C354F4785F9E9D4A2A81 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,20 +71,20 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		53A43D6E935C77D4A838C2FB768935FA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD679F24B0171AEFED67EEC2F4CD7746 /* Pods-Melodic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		878C176E7A3E3DF8BAB24F0858DEDDDD /* SwiftGen */ = {
 			isa = PBXGroup;
 			children = (
 				AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */,
 			);
 			path = SwiftGen;
-			sourceTree = "<group>";
-		};
-		8991D96E27B4BC839522283E5A6371E5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				546728A4B6B0DADD755D45B7C1AF3103 /* Pods_melodic.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		AB4F699EB2CE4C63CBA1FEFDD0861DAA /* Support Files */ = {
@@ -97,14 +97,38 @@
 			path = "../Target Support Files/SwiftGen";
 			sourceTree = "<group>";
 		};
+		BD9DB06374EDFA4FE6A33DDA0756E6A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E1FBEB4C60F9048B641B348FF5E5A7F /* Pods_Melodic.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD679F24B0171AEFED67EEC2F4CD7746 /* Pods-Melodic */ = {
+			isa = PBXGroup;
+			children = (
+				5EB66D5F83528DE87E14322F39088E79 /* Pods-Melodic.modulemap */,
+				C7754F6AACE7F34A6ECCA16D1A000B97 /* Pods-Melodic-acknowledgements.markdown */,
+				4EA0527E6B1EB2503542B10A17C52550 /* Pods-Melodic-acknowledgements.plist */,
+				28B60FB06B80650472BE7EF67E51F363 /* Pods-Melodic-dummy.m */,
+				91DDD04B13E7B3399D400E348A89EAD1 /* Pods-Melodic-Info.plist */,
+				AAE9B564791A9558C376E8FFF9CB7C5A /* Pods-Melodic-umbrella.h */,
+				CCA1147B2F6B955F12E0FA484D2E476C /* Pods-Melodic.debug.xcconfig */,
+				054F40D95585A88714A37136E0D77895 /* Pods-Melodic.release.xcconfig */,
+			);
+			name = "Pods-Melodic";
+			path = "Target Support Files/Pods-Melodic";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				08DF4A29620F30ECCD85AE71F22FD52C /* Pods */,
-				8991D96E27B4BC839522283E5A6371E5 /* Products */,
-				F4E50B6C7D230EFABD01EDDCAF979B33 /* Targets Support Files */,
+				BD9DB06374EDFA4FE6A33DDA0756E6A5 /* Products */,
+				53A43D6E935C77D4A838C2FB768935FA /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,61 +148,37 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F4E50B6C7D230EFABD01EDDCAF979B33 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F50A6BEBC6FDACF759D144DF342BF3FB /* Pods-melodic */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F50A6BEBC6FDACF759D144DF342BF3FB /* Pods-melodic */ = {
-			isa = PBXGroup;
-			children = (
-				B3339A5B2850EF6388EC01D276DCAD71 /* Pods-melodic.modulemap */,
-				CDC8708FA249326C35250775DC9849E0 /* Pods-melodic-acknowledgements.markdown */,
-				028F725673C917454CBFE3EE1AF4067A /* Pods-melodic-acknowledgements.plist */,
-				3EF8D561663FDC07632BD905FB61B382 /* Pods-melodic-dummy.m */,
-				78D0CF3084391C72E964D26CC2FDE916 /* Pods-melodic-Info.plist */,
-				6BD413F4D39F31970093675F4F9B5071 /* Pods-melodic-umbrella.h */,
-				FF460B48C8B6A0CA635EC9B8864B83AD /* Pods-melodic.debug.xcconfig */,
-				FE41401AC3E76A635FDAEED236DFF14B /* Pods-melodic.release.xcconfig */,
-			);
-			name = "Pods-melodic";
-			path = "Target Support Files/Pods-melodic";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		12C172EF850CF828E22606D18DCC660D /* Headers */ = {
+		B15FD9BF9289A6817AC0C850948FB5CE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CE28CF2B50192CFD398F6FA1068D0FE /* Pods-melodic-umbrella.h in Headers */,
+				05D0557B5111EB774333D415DBA9497A /* Pods-Melodic-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		031FF9223C85ACDDBD35F29E1E0F5168 /* Pods-melodic */ = {
+		3B4C1494F2285E42E8B8A2BF110A2545 /* Pods-Melodic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9A98D4E6A474DE8E4111F5C63A86A63A /* Build configuration list for PBXNativeTarget "Pods-melodic" */;
+			buildConfigurationList = E16130A18A224F543F7A3B9E18710041 /* Build configuration list for PBXNativeTarget "Pods-Melodic" */;
 			buildPhases = (
-				12C172EF850CF828E22606D18DCC660D /* Headers */,
-				397746A8400E2C21F234834BC823AD5E /* Sources */,
-				766BD81B23A4A27242EDDA7FD14C9F59 /* Frameworks */,
-				0AA9B69CEED73902D6D7C44F720BE355 /* Resources */,
+				B15FD9BF9289A6817AC0C850948FB5CE /* Headers */,
+				8BE46DC5750A79938F6CD20436C090B2 /* Sources */,
+				ECF555B6FBA50B432B1D2D2EA312A3CC /* Frameworks */,
+				ECCD5229E95DC616B60E09B11DE0BA71 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F62CD4C29FDB1C313B9D13135787B7E8 /* PBXTargetDependency */,
+				EBFFB89E37ED59A6291B293CD43AB23A /* PBXTargetDependency */,
 			);
-			name = "Pods-melodic";
-			productName = Pods_melodic;
-			productReference = 546728A4B6B0DADD755D45B7C1AF3103 /* Pods_melodic.framework */;
+			name = "Pods-Melodic";
+			productName = Pods_Melodic;
+			productReference = 9E1FBEB4C60F9048B641B348FF5E5A7F /* Pods_Melodic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -200,18 +200,18 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8991D96E27B4BC839522283E5A6371E5 /* Products */;
+			productRefGroup = BD9DB06374EDFA4FE6A33DDA0756E6A5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				031FF9223C85ACDDBD35F29E1E0F5168 /* Pods-melodic */,
+				3B4C1494F2285E42E8B8A2BF110A2545 /* Pods-Melodic */,
 				1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0AA9B69CEED73902D6D7C44F720BE355 /* Resources */ = {
+		ECCD5229E95DC616B60E09B11DE0BA71 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,26 +221,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		397746A8400E2C21F234834BC823AD5E /* Sources */ = {
+		8BE46DC5750A79938F6CD20436C090B2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C2FDC8F12A0E29A44C40A4C46F439D /* Pods-melodic-dummy.m in Sources */,
+				5CAD3DB59D6426B6C9E31E0E56C2B00C /* Pods-Melodic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F62CD4C29FDB1C313B9D13135787B7E8 /* PBXTargetDependency */ = {
+		EBFFB89E37ED59A6291B293CD43AB23A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftGen;
 			target = 1E798429DCFA7906F6625CCFC1088744 /* SwiftGen */;
-			targetProxy = DD98EEF5DB2E4DC8E8D2D998E6842647 /* PBXContainerItemProxy */;
+			targetProxy = 1B115C733923EB1DDE10ED28EF6DDCBC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0D84DA6EE01E50109D116CD5730AE8E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 054F40D95585A88714A37136E0D77895 /* Pods-Melodic.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				INFOPLIST_FILE = "Target Support Files/Pods-Melodic/Pods-Melodic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Melodic/Pods-Melodic.modulemap";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1A58C4EFEF96BA91CE798A5B34610E98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B4263489E673801EC37C1F15D4E531D8 /* SwiftGen.release.xcconfig */;
@@ -248,7 +286,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -266,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -275,44 +313,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		557223BE2F9024DA99FE18831E24DA2F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE41401AC3E76A635FDAEED236DFF14B /* Pods-melodic.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-melodic/Pods-melodic-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-melodic/Pods-melodic.modulemap";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -442,9 +442,9 @@
 			};
 			name = Release;
 		};
-		999899A1B58CF7FA7BBF2FD2E237B316 /* Debug */ = {
+		D947FB5045E5A6E7D9FBECD7E107E8A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF460B48C8B6A0CA635EC9B8864B83AD /* Pods-melodic.debug.xcconfig */;
+			baseConfigurationReference = CCA1147B2F6B955F12E0FA484D2E476C /* Pods-Melodic.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -455,7 +455,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-melodic/Pods-melodic-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Melodic/Pods-Melodic-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,7 +464,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-melodic/Pods-melodic.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Melodic/Pods-Melodic.modulemap";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -491,11 +491,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9A98D4E6A474DE8E4111F5C63A86A63A /* Build configuration list for PBXNativeTarget "Pods-melodic" */ = {
+		E16130A18A224F543F7A3B9E18710041 /* Build configuration list for PBXNativeTarget "Pods-Melodic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				999899A1B58CF7FA7BBF2FD2E237B316 /* Debug */,
-				557223BE2F9024DA99FE18831E24DA2F /* Release */,
+				D947FB5045E5A6E7D9FBECD7E107E8A3 /* Debug */,
+				0D84DA6EE01E50109D116CD5730AE8E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

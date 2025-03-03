@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52B3705C3F13C4CCB5B1CFA3 /* Pods_Melodic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFC5732F97F9E8A6F652D5E /* Pods_Melodic.framework */; };
 		84629FD52D717D7E006D34B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84629FD42D717D7E006D34B9 /* Alamofire */; };
 		84629FD72D717DC0006D34B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84629FD62D717DC0006D34B9 /* Alamofire */; };
+		846926B82D75A1BE003DBDCD /* Cache in Frameworks */ = {isa = PBXBuildFile; productRef = 846926B72D75A1BE003DBDCD /* Cache */; };
+		846926BB2D75A1D4003DBDCD /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 846926BA2D75A1D4003DBDCD /* CryptoSwift */; };
+		846926BE2D75A1E8003DBDCD /* FancyScrollView in Frameworks */ = {isa = PBXBuildFile; productRef = 846926BD2D75A1E8003DBDCD /* FancyScrollView */; };
+		846926C12D75A1FD003DBDCD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 846926C02D75A1FD003DBDCD /* Kingfisher */; };
+		846926C42D75A211003DBDCD /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 846926C32D75A211003DBDCD /* NotificationBannerSwift */; };
+		846926CE2D75A23D003DBDCD /* Valet in Frameworks */ = {isa = PBXBuildFile; productRef = 846926CD2D75A23D003DBDCD /* Valet */; };
 		84A956032D71635200A80D39 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 84A956022D71635200A80D39 /* swiftgen.yml */; };
-		84A9565A2D71656C00A80D39 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 84A956592D71656C00A80D39 /* KeychainSwift */; };
 		84A958D22D71755900A80D39 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84A958D12D71755900A80D39 /* FirebaseAnalytics */; };
 		84A958D42D71755900A80D39 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 84A958D32D71755900A80D39 /* FirebaseAnalyticsOnDeviceConversion */; };
 		84A958D62D71755900A80D39 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 84A958D52D71755900A80D39 /* FirebaseAnalyticsWithoutAdIdSupport */; };
@@ -21,13 +27,15 @@
 		84AC9BCA2D7193B70009A078 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 84AC9BC92D7193B70009A078 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		84AC9BCC2D7193B70009A078 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 84AC9BCB2D7193B70009A078 /* FirebaseCore */; };
 		84AC9BCE2D7193B70009A078 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 84AC9BCD2D7193B70009A078 /* FirebaseCrashlytics */; };
-		B3074C14872304B70641103E /* Pods_melodic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4249FC8CF5D5F6833EC29F4 /* Pods_melodic.framework */; };
+		84EC448E2D759EED00A8833A /* LastFM in Frameworks */ = {isa = PBXBuildFile; productRef = 84EC448D2D759EED00A8833A /* LastFM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12656F52FA51AC52AE4780A3 /* Pods-Melodic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melodic.release.xcconfig"; path = "Target Support Files/Pods-Melodic/Pods-Melodic.release.xcconfig"; sourceTree = "<group>"; };
+		2DC1A778F4C0D106D6E9471A /* Pods-Melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melodic.debug.xcconfig"; path = "Target Support Files/Pods-Melodic/Pods-Melodic.debug.xcconfig"; sourceTree = "<group>"; };
 		84342F3F2D715D9200094E7C /* Melodic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melodic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A956022D71635200A80D39 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
-		B4249FC8CF5D5F6833EC29F4 /* Pods_melodic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_melodic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADFC5732F97F9E8A6F652D5E /* Pods_Melodic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melodic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8821219702B69A51869FFA2 /* Pods-melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melodic.debug.xcconfig"; path = "Target Support Files/Pods-melodic/Pods-melodic.debug.xcconfig"; sourceTree = "<group>"; };
 		E15ABB3B32D89F4074E001FE /* Pods-melodic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melodic.release.xcconfig"; path = "Target Support Files/Pods-melodic/Pods-melodic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,20 +68,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846926BE2D75A1E8003DBDCD /* FancyScrollView in Frameworks */,
 				84629FD72D717DC0006D34B9 /* Alamofire in Frameworks */,
 				84A958D82D71755900A80D39 /* FirebaseAppCheck in Frameworks */,
 				84AC9BC82D7193B70009A078 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
 				84AC9BCE2D7193B70009A078 /* FirebaseCrashlytics in Frameworks */,
 				84A958D42D71755900A80D39 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
-				84A9565A2D71656C00A80D39 /* KeychainSwift in Frameworks */,
+				846926BB2D75A1D4003DBDCD /* CryptoSwift in Frameworks */,
+				846926CE2D75A23D003DBDCD /* Valet in Frameworks */,
 				84A958D62D71755900A80D39 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				84A958D22D71755900A80D39 /* FirebaseAnalytics in Frameworks */,
 				84AC9BCA2D7193B70009A078 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				846926B82D75A1BE003DBDCD /* Cache in Frameworks */,
 				84AC9BCC2D7193B70009A078 /* FirebaseCore in Frameworks */,
+				846926C42D75A211003DBDCD /* NotificationBannerSwift in Frameworks */,
+				84EC448E2D759EED00A8833A /* LastFM in Frameworks */,
 				84629FD52D717D7E006D34B9 /* Alamofire in Frameworks */,
-				B3074C14872304B70641103E /* Pods_melodic.framework in Frameworks */,
 				84AC9BC62D7193B70009A078 /* FirebaseAnalytics in Frameworks */,
+				846926C12D75A1FD003DBDCD /* Kingfisher in Frameworks */,
 				84A958DA2D71755900A80D39 /* FirebaseAppDistribution-Beta in Frameworks */,
+				52B3705C3F13C4CCB5B1CFA3 /* Pods_Melodic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +97,7 @@
 		72CC56CE3C47DFA064F871B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B4249FC8CF5D5F6833EC29F4 /* Pods_melodic.framework */,
+				ADFC5732F97F9E8A6F652D5E /* Pods_Melodic.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +126,8 @@
 			children = (
 				B8821219702B69A51869FFA2 /* Pods-melodic.debug.xcconfig */,
 				E15ABB3B32D89F4074E001FE /* Pods-melodic.release.xcconfig */,
+				2DC1A778F4C0D106D6E9471A /* Pods-Melodic.debug.xcconfig */,
+				12656F52FA51AC52AE4780A3 /* Pods-Melodic.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -167,9 +183,15 @@
 			mainGroup = 84342F362D715D9200094E7C;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				84A956582D71656C00A80D39 /* XCRemoteSwiftPackageReference "keychain-swift" */,
 				84A956692D716A3200A80D39 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				84A956792D716D7B00A80D39 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				84EC448C2D759EED00A8833A /* XCRemoteSwiftPackageReference "LastFM" */,
+				846926B62D75A1BE003DBDCD /* XCRemoteSwiftPackageReference "Cache" */,
+				846926B92D75A1D4003DBDCD /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				846926BC2D75A1E8003DBDCD /* XCRemoteSwiftPackageReference "FancyScrollView" */,
+				846926BF2D75A1FD003DBDCD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				846926C22D75A211003DBDCD /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+				846926CC2D75A23D003DBDCD /* XCRemoteSwiftPackageReference "Valet" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84342F402D715D9200094E7C /* Products */;
@@ -208,7 +230,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-melodic-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Melodic-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -387,7 +409,7 @@
 		};
 		84342F4F2D715D9300094E7C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B8821219702B69A51869FFA2 /* Pods-melodic.debug.xcconfig */;
+			baseConfigurationReference = 2DC1A778F4C0D106D6E9471A /* Pods-Melodic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDebug;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -404,14 +426,16 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -431,7 +455,7 @@
 		};
 		84342F502D715D9300094E7C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E15ABB3B32D89F4074E001FE /* Pods-melodic.release.xcconfig */;
+			baseConfigurationReference = 12656F52FA51AC52AE4780A3 /* Pods-Melodic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconRelease;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,14 +472,16 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -497,12 +523,52 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		84A956582D71656C00A80D39 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+		846926B62D75A1BE003DBDCD /* XCRemoteSwiftPackageReference "Cache" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			repositoryURL = "https://github.com/hyperoslo/Cache.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 24.0.0;
+				minimumVersion = 7.4.0;
+			};
+		};
+		846926B92D75A1D4003DBDCD /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.4;
+			};
+		};
+		846926BC2D75A1E8003DBDCD /* XCRemoteSwiftPackageReference "FancyScrollView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nerdsupremacist/FancyScrollView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+		846926BF2D75A1FD003DBDCD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.2.0;
+			};
+		};
+		846926C22D75A211003DBDCD /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/eenwak/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.7;
+			};
+		};
+		846926CC2D75A23D003DBDCD /* XCRemoteSwiftPackageReference "Valet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/square/Valet.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
 			};
 		};
 		84A956692D716A3200A80D39 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
@@ -521,6 +587,14 @@
 				minimumVersion = 11.9.0;
 			};
 		};
+		84EC448C2D759EED00A8833A /* XCRemoteSwiftPackageReference "LastFM" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/duhnnie/LastFM.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -534,10 +608,35 @@
 			package = 84A956692D716A3200A80D39 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		84A956592D71656C00A80D39 /* KeychainSwift */ = {
+		846926B72D75A1BE003DBDCD /* Cache */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 84A956582D71656C00A80D39 /* XCRemoteSwiftPackageReference "keychain-swift" */;
-			productName = KeychainSwift;
+			package = 846926B62D75A1BE003DBDCD /* XCRemoteSwiftPackageReference "Cache" */;
+			productName = Cache;
+		};
+		846926BA2D75A1D4003DBDCD /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846926B92D75A1D4003DBDCD /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		846926BD2D75A1E8003DBDCD /* FancyScrollView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846926BC2D75A1E8003DBDCD /* XCRemoteSwiftPackageReference "FancyScrollView" */;
+			productName = FancyScrollView;
+		};
+		846926C02D75A1FD003DBDCD /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846926BF2D75A1FD003DBDCD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		846926C32D75A211003DBDCD /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846926C22D75A211003DBDCD /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+		846926CD2D75A23D003DBDCD /* Valet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 846926CC2D75A23D003DBDCD /* XCRemoteSwiftPackageReference "Valet" */;
+			productName = Valet;
 		};
 		84A958D12D71755900A80D39 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -578,6 +677,11 @@
 		84AC9BCD2D7193B70009A078 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FirebaseCrashlytics;
+		};
+		84EC448D2D759EED00A8833A /* LastFM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 84EC448C2D759EED00A8833A /* XCRemoteSwiftPackageReference "LastFM" */;
+			productName = LastFM;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

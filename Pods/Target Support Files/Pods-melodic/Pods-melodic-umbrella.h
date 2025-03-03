@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_melodicVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_melodicVersionString[];
+FOUNDATION_EXPORT double Pods_MelodicVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_MelodicVersionString[];
 

@@ -18,7 +18,7 @@
                BlueprintIdentifier = "84342F3E2D715D9200094E7C"
                BuildableName = "Melodic.app"
                BlueprintName = "Melodic"
-               ReferencedContainer = "container:melodic.xcodeproj">
+               ReferencedContainer = "container:Melodic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "84342F3E2D715D9200094E7C"
             BuildableName = "Melodic.app"
             BlueprintName = "Melodic"
-            ReferencedContainer = "container:melodic.xcodeproj">
+            ReferencedContainer = "container:Melodic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "84342F3E2D715D9200094E7C"
             BuildableName = "Melodic.app"
             BlueprintName = "Melodic"
-            ReferencedContainer = "container:melodic.xcodeproj">
+            ReferencedContainer = "container:Melodic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

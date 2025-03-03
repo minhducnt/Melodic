@@ -91,11 +91,11 @@
 		84342F362D715D9200094E7C = {
 			isa = PBXGroup;
 			children = (
-				84A956022D71635200A80D39 /* swiftgen.yml */,
-				84342F412D715D9200094E7C /* Melodic */,
-				84342F402D715D9200094E7C /* Products */,
-				86BA3BC25281E20942890B7A /* Pods */,
 				72CC56CE3C47DFA064F871B0 /* Frameworks */,
+				84342F412D715D9200094E7C /* Melodic */,
+				86BA3BC25281E20942890B7A /* Pods */,
+				84342F402D715D9200094E7C /* Products */,
+				84A956022D71635200A80D39 /* swiftgen.yml */,
 			);
 			sourceTree = "<group>";
 		};

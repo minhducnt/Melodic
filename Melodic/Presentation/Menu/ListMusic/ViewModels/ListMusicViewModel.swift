@@ -12,12 +12,20 @@ import SwiftUI
 class WeatherViewModel: ObservableObject {
     // MARK: - Properties
 
+    private let weatherUseCase: IWeatherUsecase
+
     @Published var weatherData: [WeatherModel] = []
     @Published var isDataLoading = false
     @Published var selectedCardIndex = 0
     @Published var apiError: AppError?
 
     let cities = ["Vietnam", "Delhi", "Jaipur", "Mumbai", "Chennai", "Bengaluru", "Kolkata"]
+
+    // MARK: - Initial
+
+    init(weatherUseCase: IWeatherUsecase = FetchWeatherUseCase(repository: WeatherRepository.shared)) {
+        self.weatherUseCase = weatherUseCase
+    }
 
     // MARK: - Functions
 
@@ -30,7 +38,7 @@ class WeatherViewModel: ObservableObject {
         for city in cities {
             dispatchGroup.enter() // Track each API call
 
-            WeatherRepository.shared.getWeather(city: city, appid: Constants.weatherAppId) { [weak self] result in
+            weatherUseCase.execute(city: city, appid: Constants.weatherAppId) { [weak self] result in
                 DispatchQueue.main.async {
                     switch result {
                     case .success(let weather):

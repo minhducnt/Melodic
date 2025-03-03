@@ -7,10 +7,14 @@
 
 import Foundation
 
-class WeatherRepository {
+class WeatherRepository: IWeatherRepository {
+    // MARK: - Properties
+
     static let shared = WeatherRepository() // Singleton instance (optional)
 
     private init() {} // Prevent instantiation outside of singleton
+
+    // MARK: - Functions
 
     func getWeather(
         city: String,
@@ -37,4 +41,3 @@ class WeatherRepository {
         }
     }
 }
-

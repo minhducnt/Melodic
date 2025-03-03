@@ -18,14 +18,14 @@ struct MainTabView: View {
         TabView(
             selection: $viewModel.selectedTab,
             content: {
-                ListMusicView().tabItem {
+                ListMusicScreen().tabItem {
                     TabItemView(
                         title: "Home",
                         icon: "house.fill"
                     )
                 }.tag(Tab.tab1)
 
-                ListFavoriteView().tabItem {
+                ListFavoriteScreen().tabItem {
                     TabItemView(
                         title: "Favorite",
                         icon: "heart.fill"

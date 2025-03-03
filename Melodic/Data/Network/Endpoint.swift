@@ -12,10 +12,29 @@ struct Endpoint {
     let path: String
     let method: HTTPMethod
     let headers: [String: String]
+    let queryItems: [URLQueryItem]?
     let body: Data?
 
     var url: URL? {
-        print("\(AppConfig.BASE_URL.absoluteString)")
-        return URL(string: "\(AppConfig.BASE_URL.absoluteString)\(path)")
+        var components = URLComponents(string: "\(AppConfig.BASE_URL.absoluteString)\(path)")
+        components?.queryItems = queryItems
+        return components?.url
+    }
+}
+
+extension Endpoint {
+    // MARK: - Weather Endpoints
+
+    static func fetchWeather(city: String, appId: String) -> Endpoint {
+        return Endpoint(
+            path: "/data/2.5/weather",
+            method: .get,
+            headers: [:],
+            queryItems: [
+                URLQueryItem(name: "q", value: city),
+                URLQueryItem(name: "appid", value: appId)
+            ],
+            body: nil
+        )
     }
 }

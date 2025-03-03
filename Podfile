@@ -7,5 +7,6 @@ target 'melodic' do
 
   # Pods for melodic
   pod 'SwiftGen', '~> 6.0'
+  pod 'SDWebImage'
 
 end

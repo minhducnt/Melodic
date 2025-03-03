@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListMusicView: View {
+struct ListMusicScreen: View {
     // MARK: - Properties
 
     @StateObject var viewModel: WeatherViewModel = .init()
@@ -56,5 +56,5 @@ struct ListMusicView: View {
 }
 
 #Preview {
-    ListMusicView()
+    ListMusicScreen()
 }

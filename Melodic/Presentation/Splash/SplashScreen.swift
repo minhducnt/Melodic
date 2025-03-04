@@ -19,7 +19,7 @@ struct SplashScreen: View {
 
     var body: some View {
         ZStack {
-            Color.white
+            Color.background
 
             // MARK: - Logo
 

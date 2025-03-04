@@ -36,7 +36,6 @@ struct RootCoordinator: View {
                 HomeScreen()
             }
         }
-
         .onChange(of: rootViewModel.isAppStartCompleted) { _, _ in updateRoot() }
     }
 

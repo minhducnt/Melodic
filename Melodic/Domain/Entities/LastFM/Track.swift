@@ -73,3 +73,21 @@ struct TrackArtist: Codable, Identifiable, Hashable {
     var mbid: String?
     var name: String
 }
+
+extension Track {
+    static func fixture(
+        name: String = "Red Velvet",
+        playcount: String = "53378137",
+        listeners: String = "353237",
+        url: String = "https://example.com",
+        image: [LastFMImage] = [.fixture()]
+    ) -> Track {
+        Track(
+            name: name,
+            playcount: playcount,
+            listeners: listeners,
+            url: url,
+            image: image
+        )
+    }
+}

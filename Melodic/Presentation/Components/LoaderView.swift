@@ -16,7 +16,7 @@ struct LoaderView: View {
                 ProgressView()
             }
             .padding(40)
-            .background(Color.background)
+            .background(Color.gray.opacity(0.5))
             .cornerRadius(10)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

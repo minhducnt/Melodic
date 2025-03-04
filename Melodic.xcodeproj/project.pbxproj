@@ -509,7 +509,7 @@
 				84342F4D2D715D9300094E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		84342F4E2D715D9300094E7C /* Build configuration list for PBXNativeTarget "Melodic" */ = {
 			isa = XCConfigurationList;
@@ -518,7 +518,7 @@
 				84342F502D715D9300094E7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 

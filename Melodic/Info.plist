@@ -8,16 +8,16 @@
 	<string>$(LASTFM_API_KEY)</string>
 	<key>LASTFM_API_SHARED_SECRET</key>
 	<string>$(LASTFM_API_SHARED_SECRET)</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
 	<key>SPOTIFY_API_TOKEN</key>
 	<string>$(SPOTIFY_API_TOKEN)</string>
+	<key>SPOTIFY_API_SHARED_SECRET</key>
+	<string>$(SPOTIFY_API_SHARED_SECRET)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<true/>
 	</dict>
-	<key>UILaunchScreen</key>
-	<dict/>
 </dict>
 </plist>

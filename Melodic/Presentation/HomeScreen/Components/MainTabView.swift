@@ -18,19 +18,19 @@ struct MainTabView: View {
         TabView(
             selection: $viewModel.selectedTab,
             content: {
-                ListMusicScreen().tabItem {
+                ChartsScreen().tabItem {
                     TabItemView(
-                        title: "Home",
-                        icon: "house.fill"
+                        title: "Charts",
+                        icon: "list.bullet"
                     )
                 }.tag(Tab.tab1)
 
-                ListFavoriteScreen().tabItem {
-                    TabItemView(
-                        title: "Favorite",
-                        icon: "heart.fill"
-                    )
-                }.tag(Tab.tab2)
+                // ListFavoriteScreen().tabItem {
+                //     TabItemView(
+                //         title: "Profile",
+                //         icon: "person.crop.circle"
+                //     )
+                // }.tag(Tab.tab2)
             }
         )
         .accentColor(.primarySof)

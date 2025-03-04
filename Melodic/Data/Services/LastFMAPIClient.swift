@@ -11,6 +11,8 @@ import Foundation
 import os
 
 class LastFMAPI {
+    // MARK: - Properties
+
     static let shared = LastFMAPI()
 
     // MARK: - Logger
@@ -22,7 +24,7 @@ class LastFMAPI {
 
     // MARK: - Functions
 
-    static func request<T: Decodable>(
+    func sendRequest<T: Decodable>(
         method: HTTPMethod = .post,
         lastFMMethod: String,
         args: [String: String] = [:],
@@ -47,7 +49,7 @@ class LastFMAPI {
 
         // MARK: - Network request
 
-        logger.info("Sending request with args: \(fullArgs)")
+        LastFMAPI.logger.info("Sending request with args: \(fullArgs)")
 
         AF.request(
             url,
@@ -60,10 +62,9 @@ class LastFMAPI {
         .responseDecodable(of: T.self) { response in
             switch response.result {
             case .success(let data):
+                LastFMAPI.logger.info("Status code of request \(lastFMMethod)")
                 completion(.success(data))
-            case .failure(let error):
-                logger.error("Request failed for \(lastFMMethod): \(error.localizedDescription)")
-
+            case .failure:
                 if let responseData = response.data, let httpResponse = response.response, httpResponse.statusCode == 400, lastFMMethod == "user.getFriends" {
                     // Handle specific error case
                     if let friendsResponse = try? JSONDecoder().decode(FriendsResponse.self, from: responseData), let castedResponse = friendsResponse as? T {

@@ -55,7 +55,5 @@ struct MainTabView: View {
 
 #Preview {
     let viewModel = MainTabViewModel()
-    MainTabView(
-        viewModel: viewModel
-    )
+    MainTabView(viewModel: viewModel)
 }

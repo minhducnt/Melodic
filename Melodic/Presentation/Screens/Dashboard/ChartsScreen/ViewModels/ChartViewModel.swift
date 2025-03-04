@@ -26,7 +26,6 @@ class ChartViewModel: ObservableObject {
         
     func getChartingArtists() {
         isDataLoading = true
-        
         artists.removeAll()
         
         chartUsecase.getChartingArtists { [weak self] result in
@@ -37,7 +36,9 @@ class ChartViewModel: ObservableObject {
                     for (index, artist) in artists.enumerated() {
                         SpotifyImage.findImage(type: "artist", name: artist.name) { imageURL in
                             if let imageURL = imageURL {
-                                artists[index].image[0].url = imageURL
+                                DispatchQueue.main.async {
+                                    artists[index].image[0].url = imageURL
+                                }
                             }
                         }
                     }
@@ -66,7 +67,9 @@ class ChartViewModel: ObservableObject {
                     for (index, track) in tracks.enumerated() {
                         SpotifyImage.findImage(type: "track", name: track.name) { imageURL in
                             if let imageURL = imageURL {
-                                tracks[index].image[0].url = imageURL
+                                DispatchQueue.main.async {
+                                    tracks[index].image[0].url = imageURL
+                                }
                             }
                         }
                     }

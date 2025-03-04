@@ -19,7 +19,12 @@ struct TracksChartView: View {
         ScrollView(showsIndicators: false) {
             LazyVStack {
                 ForEach(viewModel.tracks) { track in
-                    TrackRow(track: track)
+                    NavigationLink(
+                        destination: TrackScreen(track: track),
+                        label: {
+                            TrackRow(track: track)
+                        }
+                    )
                 }
             }
             .padding(.horizontal, 20)

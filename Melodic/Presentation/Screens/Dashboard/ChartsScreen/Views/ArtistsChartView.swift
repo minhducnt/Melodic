@@ -19,8 +19,12 @@ struct ArtistsChartView: View {
         ScrollView(showsIndicators: false) {
             LazyVStack {
                 ForEach(viewModel.artists) { artist in
-                    ArtistRow(artist: artist)
-                }
+                    NavigationLink(
+                        destination: ArtistScreen(artist: artist),
+                        label: {
+                            ArtistRow(artist: artist)
+                        }
+                    )                                    }
             }
             .padding(.horizontal, 20)
         }

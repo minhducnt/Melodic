@@ -27,30 +27,29 @@ class SharedPreferences {
     // MARK: - Functions
 
     var isAuthenticated: Bool {
-        set {
-            defaults.setValue(newValue, forKey: Keys.isAuthenticated)
-        }
         get {
             return defaults.bool(forKey: Keys.isAuthenticated)
+        }
+        set {
+            defaults.setValue(newValue, forKey: Keys.isAuthenticated)
         }
     }
 
     var isOnboardingCompleted: Bool {
-        set {
-            defaults.setValue(newValue, forKey: Keys.isOnboardingCompleted)
-        }
         get {
             return defaults.bool(forKey: Keys.isOnboardingCompleted)
+        }
+        set {
+            defaults.setValue(newValue, forKey: Keys.isOnboardingCompleted)
         }
     }
 
     var selectedAppearance: String {
+        get {
+            return defaults.string(forKey: Keys.selectedTheme) ?? Theme.light.rawValue
+        }
         set {
             defaults.setValue(newValue, forKey: Keys.selectedTheme)
-        }
-        get {
-            return defaults.string(forKey: Keys.selectedTheme)
-                ?? Theme.light.rawValue
         }
     }
 }

@@ -17,7 +17,7 @@ class ArtistViewModel: ObservableObject {
     @Published var tracks: [Track] = []
     @Published var artist: ArtistInfo?
 
-    var isAlbumsLoading = false
+    var isAlbumsLoading = true
     var isTracksLoading = false
     var isInfoLoading = false
     var isLoading = false
@@ -44,6 +44,10 @@ class ArtistViewModel: ObservableObject {
 
     func getAll(_ artist: Artist) {
         self.reset()
+        
+        getArtistAlbums(artist.name)
+        getArtistTracks(artist.name)
+        getArtistInfo(artist.name)
     }
 
     // MARK: Get Artist Albums
@@ -62,10 +66,7 @@ class ArtistViewModel: ObservableObject {
                     for (index, album) in self.albums.enumerated() {
                         SpotifyImage.findImage(type: "album", name: album.name) { [weak self] imageURL in
                             guard let self = self, let imageURL = imageURL, index < self.albums.count else { return }
-
-                            DispatchQueue.main.async {
-                                self.albums[index].image[0].url = imageURL
-                            }
+                            self.albums[index].image[0].url = imageURL
                         }
                     }
                 case .failure(let error):
@@ -95,10 +96,7 @@ class ArtistViewModel: ObservableObject {
                     for (index, track) in self.tracks.enumerated() {
                         SpotifyImage.findImage(type: "track", name: track.name) { [weak self] imageURL in
                             guard let self = self, let imageURL = imageURL, index < self.tracks.count else { return }
-
-                            DispatchQueue.main.async {
-                                self.tracks[index].image[0].url = imageURL
-                            }
+                            self.tracks[index].image[0].url = imageURL
                         }
                     }
                 case .failure(let error):
@@ -116,12 +114,11 @@ class ArtistViewModel: ObservableObject {
 
     func getArtistInfo(_ artistName: String) {
         self.isLoading = true
-        self.tracks.removeAll()
-
+    
         self.artistUsecase.getArtistInfo(artistName) { [weak self] result in
             DispatchQueue.main.async {
                 guard let self = self else { return }
-                
+
                 switch result {
                 case .success(let data):
                     self.artist = data?.artist
@@ -135,10 +132,7 @@ class ArtistViewModel: ObservableObject {
                     for (index, artist) in similarArtists.enumerated() {
                         SpotifyImage.findImage(type: "artist", name: artist.name) { [weak self] imageURL in
                             guard let self = self, let imageURL = imageURL, index < self.artist?.similar.artist.count ?? 0 else { return }
-                            
-                            DispatchQueue.main.async {
-                                self.artist?.similar.artist[index].image[0].url = imageURL
-                            }
+                            self.artist?.similar.artist[index].image[0].url = imageURL
                         }
                     }
 
@@ -152,5 +146,4 @@ class ArtistViewModel: ObservableObject {
             }
         }
     }
-
 }

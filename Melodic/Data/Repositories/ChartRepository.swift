@@ -18,10 +18,7 @@ class ChartRepository: IChartRepository {
     // MARK: - Functions
 
     func getChartingArtists(completion: @escaping (Result<TopArtistsResponse?, ErrorException>) -> Void) {
-        LastFMAPI.shared.sendRequest(
-            lastFMMethod: "chart.gettopartists",
-            args: ["limit": "30"])
-        { (result: Result<TopArtistsResponse, ErrorException>) in
+        LastFMAPI.shared.sendRequest(lastFMMethod: "chart.gettopartists", args: ["limit": "30"]) { (result: Result<TopArtistsResponse, ErrorException>) in
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {
@@ -45,13 +42,8 @@ class ChartRepository: IChartRepository {
         }
     }
 
-    func getChartingTracks(
-        completion: @escaping (Result<TopTrackResponse?, ErrorException>) -> Void)
-    {
-        LastFMAPI.shared.sendRequest(
-            lastFMMethod: "chart.gettoptracks",
-            args: ["limit": "30"])
-        { (result: Result<TopTrackResponse, ErrorException>) in
+    func getChartingTracks(completion: @escaping (Result<TopTrackResponse?, ErrorException>) -> Void) {
+        LastFMAPI.shared.sendRequest(lastFMMethod: "chart.gettoptracks", args: ["limit": "30"]) { (result: Result<TopTrackResponse, ErrorException>) in
             switch result {
             case .success(let data):
                 DispatchQueue.main.async {

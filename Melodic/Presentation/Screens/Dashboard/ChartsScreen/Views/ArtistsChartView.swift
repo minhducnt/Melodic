@@ -24,7 +24,8 @@ struct ArtistsChartView: View {
                         label: {
                             ArtistRow(artist: artist)
                         }
-                    )                                    }
+                    )
+                }
             }
             .padding(.horizontal, 20)
         }

@@ -81,31 +81,30 @@ enum ErrorException: Error, Identifiable {
 
     var localeDes: String {
         switch self {
-            // Dynamic
-            case let .apiError(message):
-                return message
-            case let .networkError(error):
-                return "Network error: \(error.localizedDescription)"
-            case let .decodingError(error):
-                return "Data decoding error: \(error.localizedDescription)"
-            case let .otherError(message):
-                return message
-                
-            // Constants
-            case .genericError:
-                return "Something went wrong! Please try again."
-            case .unauthorizedAccess:
-                return "Access denied."
-            case .failedToLoadToken:
-                return "Something went wrong! Please try again."
-            case .tokenStoringFailed:
-                return "Failed to store token."
-            case .undefined:
-                return "Undefined error occurred."
-            case .serverError:
-                return "Internal server error occured"
-            case .noInternetConnection:
-                return "No internet connectivity."
+        // Dynamic
+        case let .apiError(message):
+            return message
+        case let .networkError(error):
+            return "Network error: \(error.localizedDescription)"
+        case let .decodingError(error):
+            return "Data decoding error: \(error.localizedDescription)"
+        case let .otherError(message):
+            return message
+        // Constants
+        case .genericError:
+            return "Something went wrong! Please try again."
+        case .unauthorizedAccess:
+            return "Access denied."
+        case .failedToLoadToken:
+            return "Something went wrong! Please try again."
+        case .tokenStoringFailed:
+            return "Failed to store token."
+        case .undefined:
+            return "Undefined error occurred."
+        case .serverError:
+            return "Internal server error occurred."
+        case .noInternetConnection:
+            return "No internet connectivity."
         }
     }
 }

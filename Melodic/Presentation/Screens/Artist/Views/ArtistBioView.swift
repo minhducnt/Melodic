@@ -19,7 +19,7 @@ struct ArtistBioView: View {
             VStack(alignment: .leading) {
                 Text(artistInfo?.bio.content ?? "There is no bio for this artist")
                     .padding()
-                    .navigationTitle("\(artistInfo?.name ?? "Artist") bio")
+                    .navigationTitle("\(artistInfo?.name ?? "Artist")")
                     .navigationBarItems(trailing: HStack {
                         if let link = artistInfo?.bio.links.link.href {
                             Link(destination: URL(string: link)!) {

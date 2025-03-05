@@ -34,7 +34,7 @@ class SpotifyAPI {
         let clientSecret = AppConfig.spotifySharedSecret
 
         // Encode client credentials in Base64
-        let credentials = "\(clientID):\(clientSecret)".data(using: .utf8)?.base64EncodedString() ?? ""
+        let credentials = Data("\(clientID):\(clientSecret)".utf8).base64EncodedString()
         let headers: HTTPHeaders = [
             "Authorization": "Basic \(credentials)",
             "Content-Type": "application/x-www-form-urlencoded"

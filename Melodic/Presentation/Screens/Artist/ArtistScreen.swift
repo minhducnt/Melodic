@@ -20,7 +20,7 @@ struct ArtistScreen: View {
 
     var body: some View {
         ZStack {
-            GeometryReader { g in
+            GeometryReader { geo in
                 FancyScrollView(
                     title: artist.name,
                     headerHeight: 350,
@@ -30,33 +30,34 @@ struct ArtistScreen: View {
                         KFImage.url(URL(string: artist.image[0].url)!)
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                    }
-                ) {
-                    VStack(alignment: .leading) {
-                        ArtistInfoView(artistInfo: viewModel.artist, artist: artist)
-                            .padding()
-                            .redacted(reason: viewModel.artist == nil ? .placeholder : [])
+                    },
+                    content: {
+                        VStack(alignment: .leading, spacing: 0) {
+                            ArtistInfoView(artistInfo: viewModel.artist, artist: artist)
+                                .padding()
+                                .redacted(reason: viewModel.artist == nil ? .placeholder : [])
 
-                        TopArtistTracksView(tracks: viewModel.tracks)
-                            .frame(
-                                width: g.size.width - 5,
-                                height: g.size.height * 0.7,
-                                alignment: .center
-                            )
-                            .redacted(reason: viewModel.tracks.isEmpty ? .placeholder : [])
+                            TopArtistAlbumsView(albums: viewModel.albums)
+                                
+                                .redacted(reason: viewModel.albums.isEmpty ? .placeholder : [])
 
-                        TopArtistAlbumsView(albums: viewModel.albums).offset(y: -50)
-                            .redacted(reason: viewModel.albums.isEmpty ? .placeholder : [])
+                            TopArtistTracksView(tracks: viewModel.tracks)
+                                .frame(
+                                    width: geo.size.width - 5,
+                                    height: geo.size.height * 0.7
+                                )
+                                .redacted(reason: viewModel.tracks.isEmpty ? .placeholder : [])
 
-                        SimilarArtistsView(similarArtists: viewModel.artist?.similar.artist ?? [])
-                            .offset(y: -30)
-                            .redacted(reason: viewModel.artist == nil ? .placeholder : [])
+                            SimilarArtistsView(similarArtists: viewModel.artist?.similar.artist ?? [])
+                                .offset(y: 10)
+                                .redacted(reason: viewModel.artist == nil ? .placeholder : [])
+                        }
+                        .padding(.top, 10)
+                        .onLoad {
+                            viewModel.getAll(artist)
+                        }
                     }
-                    .padding(.top, 10)
-                    .onLoad {
-                        viewModel.getAll(artist)
-                    }
-                }
+                )
                 .navigationTitle(artist.name)
             }
         }

@@ -6,8 +6,8 @@
 //
 
 import FirebaseCore
-import SwiftUI
 import LastFM
+import SwiftUI
 
 // MARK: - Firebase
 
@@ -23,10 +23,12 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
 }
 
+// MARK: - Melodic App
+
 @main
-struct melodicApp: App {
+struct MelodicApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+
     var body: some Scene {
         WindowGroup {
             RootCoordinator()

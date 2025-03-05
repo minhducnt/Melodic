@@ -76,8 +76,7 @@ class APIClient {
                 let errorMessage: String = {
                     if let data = response.data,
                        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: Any],
-                       let message = json["message"] as? String
-                    {
+                       let message = json["message"] as? String {
                         return message
                     }
                     return "HTTP Error: \(statusCode)"

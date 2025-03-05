@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52B3705C3F13C4CCB5B1CFA3 /* Pods_Melodic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFC5732F97F9E8A6F652D5E /* Pods_Melodic.framework */; };
+		84347FD12D77F16C004B33FA /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 84347FD02D77F16C004B33FA /* .swiftlint.yml */; };
 		84629FD52D717D7E006D34B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84629FD42D717D7E006D34B9 /* Alamofire */; };
 		84629FD72D717DC0006D34B9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 84629FD62D717DC0006D34B9 /* Alamofire */; };
 		846926B82D75A1BE003DBDCD /* Cache in Frameworks */ = {isa = PBXBuildFile; productRef = 846926B72D75A1BE003DBDCD /* Cache */; };
@@ -34,6 +35,7 @@
 		12656F52FA51AC52AE4780A3 /* Pods-Melodic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melodic.release.xcconfig"; path = "Target Support Files/Pods-Melodic/Pods-Melodic.release.xcconfig"; sourceTree = "<group>"; };
 		2DC1A778F4C0D106D6E9471A /* Pods-Melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Melodic.debug.xcconfig"; path = "Target Support Files/Pods-Melodic/Pods-Melodic.debug.xcconfig"; sourceTree = "<group>"; };
 		84342F3F2D715D9200094E7C /* Melodic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Melodic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84347FD02D77F16C004B33FA /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		84A956022D71635200A80D39 /* swiftgen.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		ADFC5732F97F9E8A6F652D5E /* Pods_Melodic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Melodic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8821219702B69A51869FFA2 /* Pods-melodic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-melodic.debug.xcconfig"; path = "Target Support Files/Pods-melodic/Pods-melodic.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				86BA3BC25281E20942890B7A /* Pods */,
 				84342F402D715D9200094E7C /* Products */,
 				84A956022D71635200A80D39 /* swiftgen.yml */,
+				84347FD02D77F16C004B33FA /* .swiftlint.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -145,6 +148,7 @@
 				84342F3C2D715D9200094E7C /* Frameworks */,
 				84342F3D2D715D9200094E7C /* Resources */,
 				84AC9C212D71CC9A0009A078 /* Crashlytic */,
+				84347FCB2D77EAB6004B33FA /* Swift Lint */,
 			);
 			buildRules = (
 			);
@@ -192,6 +196,7 @@
 				846926BF2D75A1FD003DBDCD /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				846926C22D75A211003DBDCD /* XCRemoteSwiftPackageReference "NotificationBanner" */,
 				846926CC2D75A23D003DBDCD /* XCRemoteSwiftPackageReference "Valet" */,
+				84347FCA2D77E9A2004B33FA /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 84342F402D715D9200094E7C /* Products */;
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A956032D71635200A80D39 /* swiftgen.yml in Resources */,
+				84347FD12D77F16C004B33FA /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +242,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		84347FCB2D77EAB6004B33FA /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		84A956052D71636100A80D39 /* Swift Gen */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -523,6 +548,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		84347FCA2D77E9A2004B33FA /* XCRemoteSwiftPackageReference "SwiftLintPlugins" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SimplyDanny/SwiftLintPlugins";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.58.2;
+			};
+		};
 		846926B62D75A1BE003DBDCD /* XCRemoteSwiftPackageReference "Cache" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hyperoslo/Cache.git";
